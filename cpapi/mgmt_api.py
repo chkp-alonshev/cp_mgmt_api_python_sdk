@@ -765,5 +765,3 @@ class HTTPSConnection(http_client.HTTPSConnection):
             self.connect()
         fingerprint = hashlib.new("SHA1", self.sock.getpeercert(True)).hexdigest()
         return fingerprint.upper()
-    def test(self):
-        return
